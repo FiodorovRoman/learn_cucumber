@@ -1,9 +1,10 @@
 package org.example;
 
+import static org.junit.Assert.assertEquals;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import static org.junit.Assert.*;
 import java.util.Map;
 
 public class OrderSmoothieStepDefinitions {
@@ -14,7 +15,7 @@ public class OrderSmoothieStepDefinitions {
 
   private Map<String, Integer> prices;
 
-  @Given("I have {int} dollar, Prices are:")
+  @Given("I have {int} dollars, Prices are:")
   public void i_have_dollar_Prices_are(Integer initialSum, Map<String, Integer> prices) {
 
     this.initialSum = initialSum;
