@@ -11,9 +11,10 @@
 
     <properties>
         <cucumber.version>5.5.0</cucumber.version>
-        <junit.version>4.13</junit.version>
         <serenity-bdd.version>2.2.0</serenity-bdd.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <testng.version>7.1.0</testng.version>
+        <selenium-java.version>3.141.59</selenium-java.version>
     </properties>
 
     <dependencies>
@@ -56,11 +57,30 @@
         </dependency>
 
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium-java.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>${selenium-java.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>3.8.1</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -71,8 +91,8 @@
                 <version>3.7.0</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>13</source>
+                    <target>13</target>
                 </configuration>
             </plugin>
             <plugin>
