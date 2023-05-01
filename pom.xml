@@ -13,7 +13,7 @@
         <cucumber.version>5.5.0</cucumber.version>
         <serenity-bdd.version>2.2.0</serenity-bdd.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <testng.version>7.1.0</testng.version>
+        <testng.version>7.7.0</testng.version>
         <selenium-java.version>3.141.59</selenium-java.version>
     </properties>
 
